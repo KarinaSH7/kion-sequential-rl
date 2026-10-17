@@ -1,0 +1,71 @@
+{
+  "arms": {
+    "replay_kl_control": {
+      "step": 80,
+      "reward_constraint_feasible": false,
+      "settings": {
+        "beta": 0.15,
+        "kind": "replay"
+      }
+    },
+    "completion_weak_kl": {
+      "step": 20,
+      "reward_constraint_feasible": true,
+      "settings": {
+        "beta": 0.01,
+        "kind": "completion"
+      }
+    },
+    "completion_strong_kl": {
+      "step": 20,
+      "reward_constraint_feasible": true,
+      "settings": {
+        "beta": 0.15,
+        "kind": "completion"
+      }
+    },
+    "conservative": {
+      "step": 20,
+      "reward_constraint_feasible": true,
+      "settings": {
+        "beta": 0.15,
+        "kind": "conservative"
+      }
+    },
+    "continuation_mix": {
+      "step": 20,
+      "reward_constraint_feasible": true,
+      "settings": {
+        "beta": 0.15,
+        "kind": "continuation"
+      }
+    }
+  },
+  "reference": {
+    "queries": 12000,
+    "active_queries": 2368,
+    "recall10": 0.12321227477477477,
+    "ndcg10": 0.06779731942930281,
+    "ndcg10_all": 0.013378671034049086,
+    "catalog_coverage10": 0.368,
+    "top1_share": 0.3446666666666667,
+    "top1_item_token": 3,
+    "repeat10": 0.2308,
+    "pair_overlap10": 0.4097097097097097,
+    "genre_diversity10": 0.7885524875073489,
+    "predicted_completion10": 0.5759824514389038,
+    "reward_disagreement10": 0.025396758690476418,
+    "predicted_continuation10": 0.6865383982658386,
+    "mean_train_popularity10": 1565.6797333333334,
+    "target_catalog_coverage": 0.5612724757952974,
+    "filtered_recall10": 0.14584389076576576,
+    "filtered_ndcg10": 0.08597966868862716
+  },
+  "selection_rule": "max validation NDCG under predicted completion >= baseline; fall back to max NDCG if infeasible",
+  "baseline_seed": 42,
+  "rl_seeds": [
+    42,
+    17,
+    2026
+  ]
+}
