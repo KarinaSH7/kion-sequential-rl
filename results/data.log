@@ -1,0 +1,50 @@
+{
+  "source_revision": "f69775be31fa5779907cf0a92ddedb70037fb5ae",
+  "source_sha256": "fddc5b2215bfff49bcfa21e464441f1fc6dc30f8f4afe41d3f23bf3fc45f3542",
+  "cohort_users": 12000,
+  "eligible_users": 184944,
+  "cohort_rows": 200358,
+  "train_rows": 155924,
+  "examples": {
+    "train": {
+      "examples": 80000,
+      "before_cap": 100570,
+      "reward_mean": 0.55276,
+      "continuation_labeled": 72594
+    },
+    "dev": {
+      "examples": 10661,
+      "before_cap": 10661,
+      "reward_mean": 0.523504361692149,
+      "continuation_labeled": 5916
+    },
+    "test": {
+      "examples": 6751,
+      "before_cap": 6751,
+      "reward_mean": 0.45391053177307067,
+      "continuation_labeled": 3468
+    }
+  },
+  "query_counts": {
+    "dev": 12000,
+    "tune": 12000,
+    "test": 12000,
+    "rl": 12000
+  },
+  "active_queries": {
+    "dev": 4381,
+    "tune": 2368,
+    "test": 3446,
+    "rl": 0
+  },
+  "empty_histories": {
+    "dev": 0,
+    "tune": 0,
+    "test": 0,
+    "rl": 0
+  },
+  "vocab_size": 1002,
+  "train_target_catalog_coverage": 0.7539057489546189,
+  "max_context": 32,
+  "tie_policy": "strictly earlier days; item_id tie-break within historical days"
+}

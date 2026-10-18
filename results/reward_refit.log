@@ -1,0 +1,4 @@
+W1017 20:48:10.180000 23294 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+reward 42 best_dev_rmse 0.3874846673259513
+reward 17 best_dev_rmse 0.38749361603128313
+reward 2026 best_dev_rmse 0.38709538365119495

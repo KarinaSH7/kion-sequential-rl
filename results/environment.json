@@ -1,0 +1,7 @@
+{
+  "python": "3.11.1",
+  "torch": "2.14.1",
+  "device": "cpu",
+  "threads": 4,
+  "stage_wall_s": 11.165677070617676
+}

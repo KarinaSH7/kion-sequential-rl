@@ -1,0 +1,8 @@
+{
+  "locked_policies_sha256": "c8b70cb59110cbe128f0284a73e35f2a4fd5f1f9d16f51aeed666284aa90c803",
+  "policies": 16,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 42,
+  "test_used_for_selection": false,
+  "evaluation_wall_s": 112.51401901245117
+}

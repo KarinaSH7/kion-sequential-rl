@@ -1,0 +1,39 @@
+{
+  "train": {
+    "examples": 80000,
+    "strict_history": true,
+    "continuation_censoring": true
+  },
+  "dev": {
+    "examples": 10661,
+    "strict_history": true,
+    "continuation_censoring": true
+  },
+  "test": {
+    "examples": 6751,
+    "strict_history": true,
+    "continuation_censoring": true
+  },
+  "dev_source_contexts": true,
+  "rl_source_contexts": true,
+  "tune_source_contexts": true,
+  "test_source_contexts": true,
+  "independent_metric_files": [
+    "replay_kl_control_17_top10.npz",
+    "baseline_42_top10.npz",
+    "continuation_mix_17_top10.npz",
+    "completion_strong_kl_42_top10.npz",
+    "conservative_17_top10.npz",
+    "completion_weak_kl_17_top10.npz",
+    "conservative_2026_top10.npz",
+    "conservative_42_top10.npz",
+    "completion_weak_kl_2026_top10.npz",
+    "completion_strong_kl_17_top10.npz",
+    "completion_strong_kl_2026_top10.npz",
+    "completion_weak_kl_42_top10.npz",
+    "continuation_mix_42_top10.npz",
+    "replay_kl_control_2026_top10.npz",
+    "replay_kl_control_42_top10.npz",
+    "continuation_mix_2026_top10.npz"
+  ]
+}

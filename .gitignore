@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 .DS_Store
 results_reference/
+.ruff_cache/

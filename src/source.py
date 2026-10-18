@@ -1,4 +1,5 @@
 """Pinned public data download and complete-user sampling. No credentials needed."""
+
 from __future__ import annotations
 
 import hashlib
@@ -43,4 +44,3 @@ def download():
             tmp.replace(path)
         if name in expected and sha256(path) != expected[name]:
             raise ValueError(f"Checksum mismatch: {path}")
-
